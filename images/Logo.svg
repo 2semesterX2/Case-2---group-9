@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="184px" height="66px" viewBox="0 0 184 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-96.000000, -270.000000)" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="bold">
+        <g id="Group" transform="translate(93.000000, 260.000000)">
+            <text id="Steno" font-size="43" fill="#FFFFFF">
+                <tspan x="51" y="42">Steno</tspan>
+            </text>
+            <text id="Museet" font-size="53" fill="#2774FE">
+                <tspan x="0.2695" y="75">Museet</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
