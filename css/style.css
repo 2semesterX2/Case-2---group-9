@@ -24,148 +24,213 @@ h1 {
 h2 {
   font-size: 1.2em;
 }
-main{
+
+main {
   background-image: url('../images/background.jpg');
 }
-#index{
+
+#index {
   text-align: center;
 }
-#index #logo{
+
+#index #logo {
   padding: 50% 0;
 }
-#index input{
+
+#index input {
   border-radius: 20px;
-  width:70%;
+  width: 70%;
   height: 25px;
-  font-size:1.4em;
+  font-size: 1.4em;
   opacity: 0.7;
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  padding-left:15px;
+  padding-left:3%;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  padding-left:15px;
-}
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  padding-left:15px;
-}
-#index .btn{
+#index .btn {
   background: #1e5eff;
   margin: 10% 35% 20% 35%;
-  padding:1%;
-  border-radius: 5px;
+  border-radius: 2px;
 }
-#index .btn a{
-  color:white;
-  font-size:1.2em;
+
+#index .btn a {
+  color: white;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
+  padding: 7% 1%;
+  display: block;
 }
+
 #index .instructions {
-  padding-bottom:7%;
+  padding-bottom: 7%;
 }
-#index .instructions a{
+
+#index .instructions a {
   color: #6e87ab;
   text-decoration: none;
 }
-#instructions{
+
+#instructions {
   padding-top: 15%;
 }
-#instructions #background{
-  padding-top:5%;
+
+#instructions #background {
+  padding-top: 5%;
   background: #0F1927;
   padding-bottom: 15%;
 }
-#instructions #background .btn{
+
+#instructions #background .btn {
+  font-family: 'Bree Serif', serif;
   background: #1e5eff;
   margin: 0% 40% 0 40%;
-  padding:1%;
+  padding: 1%;
   border-radius: 5px;
   text-align: center;
 }
-#instructions #background .btn a{
-  color:white;
-  font-size:1.2em;
+
+#instructions #background .btn a {
+  color: white;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
 }
-#instructions #background #text{
+
+#instructions #background #text {
   background: #0F1927;
-  padding:5% 9% 10% 9%;
-  box-shadow: 0 12px 24px 0 rgba(0,0,0,0.50) inset;
-  font-size: 1.3em;
-  color: #8399B8; 
+  padding: 5% 9% 10% 9%;
+  -webkit-box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.50) inset;
+  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.50) inset;
+  font-size: 1.4em;
+  color: #8399B8;
+
 }
-#instructions #background #text p{
-  margin:7% 0;
+
+#instructions #background #text p {
+  margin: 7% 0;
 }
-#instructions #background #text p em{
-  color:white;
+
+#instructions #background #text p em {
+  color: white;
 }
-#questionPage{
-  padding-bottom:10%;
+
+#questionPage {
+  padding-bottom: 5%;
+  text-align: center;
 }
-#questionPage img{
-  width:100%;
+
+#questionPage #result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1% 1%;
+  font-size: 1.2em;
+}
+
+#questionPage #result #correct {
+  color: #50E3C2;
+}
+
+#questionPage #result #number {
+  color: white;
+}
+
+#questionPage #result #wrong {
+  color: #EF6C6C;
+}
+
+#questionPage img {
+  width: 100%;
   opacity: 0.8;
-  background-image: linear-gradient(-180deg, #0E1A28 0%, rgba(0,0,0,0.00) 100%);  
-  margin-bottom:5%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0E1A28), to(rgba(0, 0, 0, 0.00)));
+  background-image: linear-gradient(-180deg, #0E1A28 0%, rgba(0, 0, 0, 0.00) 100%);
+  margin-bottom: 5%;
 }
-#questionPage #question{
+
+#questionPage #question {
+  font-family: 'Bree Serif', serif;
   font-size: 1.6em;
   line-height: 1.2em;
   color: #FFFFFF;
-  text-shadow: 0 1px 7px #000000; 
-  margin-left: 2%; 
+  text-shadow: 0 1px 7px #000000;
+  margin-left: 2%;
+  margin-bottom: 5%;
 }
-#questionPage .answer{
+
+#questionPage #answers {
+  margin: 0 10%;
+}
+
+#questionPage .answer {
   background: #2774FE;
   border-radius: 2px;
-  text-align:center;
-  margin:7% 10%;
-  color:white;
-  font-size:1.4em;
-  padding:3.5%;
-}
-#questionPage .btn{
-  background: #1e5eff;
-  margin: 0% 40% 0 40%;
-  padding:1%;
-  border-radius: 5px;
   text-align: center;
+  margin-bottom: 10%;
+  color: white;
+  font-size: 1.4em;
+  padding: 4%;
 }
-#questionPage .btn a{
-  color:white;
-  font-size:1.2em;
+#questionPage .btn {
+  background: #1e5eff;
+  margin: 10% 35% 20% 35%;
+  color: white;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: none;
+  padding: 2.5% 1%;
+  display: block;
 }
-#resultPage{
-  text-align:center;
-  padding-bottom:10%;
+
+#resultPage {
+  text-align: center;
+  padding-bottom: 10%;
 }
-#resultPage #congratulations{
-  font-family: BreeSerif-Regular;
+
+#resultPage #congratulations {
+  font-family: 'Bree Serif', serif;
   font-size: 3em;
   color: #FFFFFF;
-  padding:20% 0 25% 0;
+  padding: 20% 0 25% 0;
 }
-#resultPage #correctAnswers{
-  font-family: BreeSerif-Regular;
-  font-size:2em;
+
+#resultPage #correctAnswers {
+  font-family: 'Bree Serif', serif;
+  font-size: 2em;
   color: #FFFFFF;
-  margin:0 30% 15% 30%;
+  margin: 0 30% 15% 30%;
   line-height: 1.2em;
 }
-#resultPage #message{
-  font-family: BreeSerif-Regular;
+
+#resultPage #message {
+  font-family: 'Bree Serif', serif;
   font-size: 2.9em;
   color: #FFFFFF;
-  margin-bottom:40%;
-  margin-top:10%;
+  margin-bottom: 40%;
+  margin-top: 10%;
 }
-#resultPage btn{
-  
+
+#resultPage .btn {
+  background-color: #193f9e;
+  margin: 0 35%;
+  padding: 3% 3%;
 }
+
+#resultPage .btn a {
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  padding:5%;
+}
+
+#resultBtn {
+  display:block;
+  text-decoration:none;
+  color:white;
+  padding:3%;
+}
+
