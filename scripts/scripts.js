@@ -201,9 +201,6 @@ $(document).ready(function () {
   let inputField = $('#index input');
   let startButton = $('#index .btn');
 
-
-  localStorage.setItem('finalScore', score);
-
   // Disable the button if the text field is empty, if not, enable it. 
   startButton.css('pointer-events', 'none')
   inputField.keyup(function () {
@@ -246,6 +243,7 @@ $(document).ready(function () {
     for (let i = 0; i < questions[currQ].answers.length; i++) {
       $(currentAnswers[i]).text(questions[currQ].answers[i]);
     }
+    localStorage.setItem('finalScore', score);
 
     // Change answers color to default (blue) and enable answer buttons
     currentAnswers.css('background-color', '#1e5eff')
