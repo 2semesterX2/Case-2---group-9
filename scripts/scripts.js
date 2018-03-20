@@ -212,7 +212,6 @@ $(document).ready(function () {
   });
 
   // Changing the content for every question after clicking Continue
-  console.log('here')
   // Put the items that will get changed in variables
   let continueBtn = $('#questionPage .btn');
   let correctAnswers = $('#questionPage #result #correct');
@@ -243,6 +242,7 @@ $(document).ready(function () {
     for (let i = 0; i < questions[currQ].answers.length; i++) {
       $(currentAnswers[i]).text(questions[currQ].answers[i]);
     }
+    // Set the score in the local storage to be equal to the variable score
     localStorage.setItem('finalScore', score);
 
     // Change answers color to default (blue) and enable answer buttons
@@ -266,22 +266,24 @@ $(document).ready(function () {
       wrong++;
     } else {
       score++;
+      // Update the score in the local storage
       localStorage.setItem('finalScore', score);
     }
+    // Update the score points
     correctAnswers.text(score);
     wrongAnswers.text(wrong);
     // enable continue
     continueBtn.css('pointer-events', '');
     // console.log(this)
   })
-  // changing the image and the text in the last page with the score
 
+  // changing the image and the text in the last page with the score
   // Put the needed items in variables
   let resultImg = $('#resultPage img');
   let message = $('#resultPage #message');
 
+  // Put the content for the result page
   $('#resultPage #correctAnswers').text(`${localStorage.getItem('finalScore')}/16 Answers correct`)
-
   if (localStorage.getItem('finalScore') > 12) {
     message.text('Excellent!');
     resultImg.attr('src', './images/5stars.svg')
@@ -295,5 +297,5 @@ $(document).ready(function () {
     message.text('Better next time!');
     resultImg.attr('src', './images/0stars.svg')
   }
-
+  // Close the document ready function
 });
