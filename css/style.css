@@ -34,7 +34,9 @@ main {
 }
 
 #index #logo {
-  padding: 50% 0;
+  padding: 50% 25%;
+  width:50%;
+  text-align:center;
 }
 
 #index input {
@@ -173,6 +175,7 @@ main {
   color: white;
   font-size: 1.4em;
   padding: 4%;
+  font-weight: bold;
 }
 #questionPage .btn {
   background: #1e5eff;
